@@ -1,0 +1,148 @@
+.card {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: #F4F4F4;
+  border-radius: 10px;
+}
+
+.card_top {
+  display: flex;
+  align-items: flex-start;
+}
+
+.card_top_labels {
+  
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  font-size: 0px;
+  line-height: 1px;
+}
+/* font-size: 0;
+  color: transparent; */
+.card_top_labels label {
+  border-radius: 40px;
+  padding: 4px 12px;
+  background-color: gray;
+  color: #fff;
+  width: 60px;
+}
+
+.card_top_more {
+  width: 30px;
+  height: 1rem;
+  transform: translateX(15px);
+  flex: 1;
+  cursor: pointer;
+  opacity: 0;
+  transition: 200ms;
+}
+
+.card:hover .card_top_more {
+  opacity: 1;
+}
+
+.card_title {
+  flex: 1;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.desc_title{
+  font-family: "Poppins";
+  font-size: 13px;
+  line-height: 1rem;
+  font-weight: 200;
+  color: darkgray;
+  ;
+}
+.card-like-comment{
+    display: flex;
+    justify-content: space-between;
+}
+.like-button{
+ 
+  color: #fff; /* Set your text color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  
+}
+.like-image:hover {
+  background-color: red; /* Set your hover color */
+  border-radius: 10px;
+}
+
+.like-image:active {
+  transition: 0.05s;
+  transform: scale(1.95); /* Add a click effect animation */
+}
+.like-count{
+  color: darkgrey;
+  margin: 0%;
+  padding: 0%;
+}
+.like-container{
+  display:flex;
+  flex-direction: row-reverse;
+}
+
+.card-icons-low-right{
+  display: flex;
+  justify-content: center;
+  gap:1.5rem;
+}
+.card-like-comment{
+  margin-top: 1rem;
+}
+.card_footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-img{
+  max-width:270px;
+  max-height:200px;
+  border-radius: 10px;
+}
+.card-attach-file-icon-bottom{
+  transition: color 0.3s ease;
+}
+.card-attach-file-icon-bottom:hover{
+  background-color: lightblue;
+  border-radius: 10px;
+}
+.card-attach-file-icon-bottom:active {
+  transition: 0.3s ease;
+  transform: scale(2.5);
+}
+
+.card_footer_item {
+  border-radius: 40px;
+  padding: 4px 12px;
+  background-color: #f8f8f8;
+  color: #000;
+  width: fit-content;
+  font-size: 14px;
+  line-height: 21px;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.card_footer_icon {
+  height: 13px;
+  width: 13px;
+}
+
+.card_footer_user {
+  border-radius: 50%;
+  height: 28px;
+  width: 28px;
+  background-color: #f8f8f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
